@@ -1,10 +1,13 @@
-package ProvaMain;
+package prova;
+
+import model.Utente;
 
 public class Main {
 
 	public static void main(String[] args) {
-
-		System.out.println("Hello, World!");
+		Utente u = new Utente("topolino","minni");
+		System.out.println(u.login("pippo","pluto"));
+		System.out.println(u.login("topolino","minni"));
 
 	}
 
